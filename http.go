@@ -94,7 +94,7 @@ func (h *HTTPServer) serveEmbeddedFile(path string, w http.ResponseWriter, r *ht
 func (h *HTTPServer) serveEmbeddedStaticAssets(w http.ResponseWriter, r *http.Request) {
 	param := chi.URLParam(r, "*")
 	ext := filepath.Ext(param)
-	if param == "" || (ext != ".js" && ext != ".css") {
+	if param == "" || (ext != ".js" && ext != ".css" && ext != ".ico") {
 		param = "index.html"
 	}
 
