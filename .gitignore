@@ -3,3 +3,4 @@
 *.acmi
 node_modules/
 /lardoon.exe
+cmd/lardoon/resource.syso
