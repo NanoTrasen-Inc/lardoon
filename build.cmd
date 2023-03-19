@@ -1,6 +1,7 @@
 @echo off
 set NODE_OPTIONS=--openssl-legacy-provider
 set GOARCH=386
+set CGO_ENABLED=1
 
 echo Cleaning up...
 del lardoon.exe 2>NUL
